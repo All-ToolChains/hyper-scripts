@@ -37,7 +37,7 @@ elif [[ "$dir" = "Uber-X-SaberMod"* ]]; then
 branch=UxSM
 fi;
 cd $OUT/$dir;
-git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push git@bitbucket.org:hyper-toolchains/arm-eabi-4.9.git $branch;
+git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push -f git@bitbucket.org:hyper-toolchains/arm-eabi-4.9.git $branch;
 done;
 
 # Push 5.x arm-eabi Toolchains
@@ -56,7 +56,7 @@ elif [[ "$dir" = "Uber-X-SaberMod"* ]]; then
 branch=UxSM
 fi;
 cd $OUT/$dir;
-git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push git@bitbucket.org:hyper-toolchains/arm-eabi-5.x.git $branch;
+git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push -f git@bitbucket.org:hyper-toolchains/arm-eabi-5.x.git $branch;
 done;
 
 # Push 6.x arm-eabi Toolchains
@@ -75,7 +75,7 @@ elif [[ "$dir" = "Uber-X-SaberMod"* ]]; then
 branch=UxSM
 fi;
 cd $OUT/$dir;
-git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push git@bitbucket.org:hyper-toolchains/arm-eabi-6.x.git $branch;
+git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push -f git@bitbucket.org:hyper-toolchains/arm-eabi-6.x.git $branch;
 done;
 
 # Push 7.x arm-eabi Toolchains
@@ -90,7 +90,7 @@ elif [[ "$dir" = "Uber-X-SaberMod"* ]]; then
 branch=UxSM
 fi;
 cd $OUT/$dir;
-git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push git@bitbucket.org:hyper-toolchains/arm-eabi-7.x.git $branch;
+git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push -f git@bitbucket.org:hyper-toolchains/arm-eabi-7.x.git $branch;
 done;
 
 # Push 4.9 arm-linux-androideabi Toolchains
@@ -109,7 +109,7 @@ elif [[ "$dir" = "Uber-X-SaberMod"* ]]; then
 branch=UxSM
 fi;
 cd $OUT/$dir;
-git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push git@bitbucket.org:hyper-toolchains/arm-linux-androideabi-4.9.git $branch;
+git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push -f git@bitbucket.org:hyper-toolchains/arm-linux-androideabi-4.9.git $branch;
 done;
 
 # Push 5.x arm-linux-androideabi Toolchains
@@ -128,5 +128,5 @@ elif [[ "$dir" = "Uber-X-SaberMod"* ]]; then
 branch=UxSM
 fi;
 cd $OUT/$dir;
-git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push git@bitbucket.org:hyper-toolchains/arm-linux-androideabi-5.x.git $branch;
+git init && git add -A && git commit -m "New Build" -s && git checkout -b $branch && git push -f git@bitbucket.org:hyper-toolchains/arm-linux-androideabi-5.x.git $branch;
 done;

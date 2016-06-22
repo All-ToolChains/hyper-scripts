@@ -36,7 +36,7 @@ if [ -n "$CPU" ]; then
 CPU="--with-tune=$CPU"
 fi;
 if [ -n "$FPU" ]; then
-WITH_FPU="--with-tune=$FPU"
+WITH_FPU="--with-fpu=$FPU"
 fi;
 
 if [ "${TOOLCHAIN1}" = "Linaro" ]; then

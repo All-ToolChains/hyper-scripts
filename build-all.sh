@@ -16,13 +16,13 @@ scripts='arm-eabi-4.9 arm-eabi-5.x arm-eabi-6.x arm-eabi-7.x arm-linux-androidea
 for exec in $scripts; do
   # Do not build Linaro variants for 7.x
   if ! [ "$exec" = "arm-eabi-7.x" ]; then
-    $exec Linaro SaberMod;
-    $exec Linaro Uber;
+    ./$exec Linaro SaberMod;
+    ./$exec Linaro Uber;
   fi;
-  $exec SaberMod Linaro;
-  $exec SaberMod Uber;
-  $exec Uber Linaro;
-  $exec Uber SaberMod;
+  ./$exec SaberMod Linaro;
+  ./$exec SaberMod Uber;
+  ./$exec Uber Linaro;
+  ./$exec Uber SaberMod;
 done;
 
 # State when complete.
